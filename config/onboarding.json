@@ -2,7 +2,7 @@
    {
       "data_flow_id": "100",
       "data_flow_group": "A1",
-      "source_system": "mysql",
+      "source_system": "manual",
       "source_format": "cloudFiles",
       "source_details": {
          "source_database": "customers",
@@ -54,7 +54,7 @@
    {
       "data_flow_id": "101",
       "data_flow_group": "A1",
-      "source_system": "mysql",
+      "source_system": "manual",
       "source_format": "cloudFiles",
       "source_details": {
          "source_database": "orders",
@@ -90,7 +90,7 @@
    {
       "data_flow_id": "103",
       "data_flow_group": "A1",
-      "source_system": "mysql",
+      "source_system": "manual",
       "source_format": "cloudFiles",
       "source_details": {
          "source_database": "products",
@@ -138,3 +138,4 @@
       "silver_data_quality_expectations_json_prod": "/Volumes/lucie_finkova/dlt_meta_lukas/dlt_meta_conf/dqe/products_silver_dqe.json"
    }
 ]
+
