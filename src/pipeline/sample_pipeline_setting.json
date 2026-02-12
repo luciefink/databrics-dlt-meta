@@ -1,0 +1,25 @@
+{
+  "id": "xxxx",
+  "pipeline_type": "WORKSPACE",
+  "name": "DLT_META_BRONZE_LUKAS",
+  "configuration": {
+    "layer": "bronze",
+    "bronze.group": "A1",
+    "bronze.dataflowspecTable": "lucie_finkova.dlt_meta_lukas.bronze_dataflowspec_table"
+  },
+  "libraries": [
+    {
+      "glob": {
+        "include": "/Workspace/Users/lupinek.fink@gmail.com/dlt_meta_lukas/dlt_meta_pipeline.py"
+      }
+    }
+  ],
+  "schema": "dlt_meta_lukas",
+  "continuous": false,
+  "development": false,
+  "photon": true,
+  "channel": "CURRENT",
+  "catalog": "lucie_finkova",
+  "serverless": true,
+  "root_path": "/Workspace/Users/lupinek.fink@gmail.com"
+}
