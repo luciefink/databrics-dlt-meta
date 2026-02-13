@@ -5,8 +5,6 @@
       "source_system": "manual",
       "source_format": "cloudFiles",
       "source_details": {
-         "source_database": "customers",
-         "source_table": "customers",
          "source_path_prod": "/Volumes/lucie_finkova/dlt_meta_lukas/dlt_meta_data/customers",
          "source_schema_path": "/Volumes/lucie_finkova/dlt_meta_lukas/dlt_meta_ddl/customers.ddl"
       },
@@ -57,8 +55,6 @@
       "source_system": "manual",
       "source_format": "cloudFiles",
       "source_details": {
-         "source_database": "orders",
-         "source_table": "orders",
          "source_path_prod": "/Volumes/lucie_finkova/dlt_meta_lukas/dlt_meta_data/orders",
          "source_schema_path": "/Volumes/lucie_finkova/dlt_meta_lukas/dlt_meta_ddl/orders.ddl"
       },
@@ -93,8 +89,6 @@
       "source_system": "manual",
       "source_format": "cloudFiles",
       "source_details": {
-         "source_database": "products",
-         "source_table": "products",
          "source_path_prod": "/Volumes/lucie_finkova/dlt_meta_lukas/dlt_meta_data/products",
          "source_schema_path": "/Volumes/lucie_finkova/dlt_meta_lukas/dlt_meta_ddl/products.ddl"
       },
@@ -138,4 +132,3 @@
       "silver_data_quality_expectations_json_prod": "/Volumes/lucie_finkova/dlt_meta_lukas/dlt_meta_conf/dqe/products_silver_dqe.json"
    }
 ]
-
