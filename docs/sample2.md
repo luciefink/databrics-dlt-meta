@@ -27,7 +27,7 @@ _Input files:_
   
     orders_quarantine2 - 171 rows (quarantine condition - customerid, orderid, _rescued_data, order amount, order date, order status)
 		
-	  products_quarantine2 - 68 rows (quarantine condition -  productid, rescued data, price, stock quantity)
+	products_quarantine2 - 68 rows (quarantine condition -  productid, rescued data, price, stock quantity)
 
   **Bronze tables**
   
@@ -39,8 +39,8 @@ _Input files:_
 
   **Silver tables**
   
-    customers_bronze - 969 (where clause - age > 69)
+    customers_silver2 - 969 (where clause - age > 69)
 
-  	orders_bronze - 503 
+  	orders_silver2 - 1957
   
-  	products_bronze - 1957
+  	products_silver2 - 503
