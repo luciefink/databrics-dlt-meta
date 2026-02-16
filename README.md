@@ -84,4 +84,25 @@ Create two separate pipelines:
 
 Create a Databricks Job to orchestrate the bronze and silver pipelines in sequence.
 
+************************************************************************************************
+
+************************************************************************************************
+
+_Notes:_
+
+**A/ 2nd silver/bronze pipeplines with slightly different config setting:**
+
+- https://github.com/luciefink/databrics-dlt-meta/blob/main/config/onboarding2.json
+- https://github.com/luciefink/databrics-dlt-meta/blob/main/config/silver_transformations2.json
+- https://github.com/luciefink/databrics-dlt-meta/tree/main/config/dqe2
+
+**B/ Bronze and Silver pipeline chaining**
+
+- change in pipeline setting
+- https://github.com/luciefink/databrics-dlt-meta/blob/main/src/pipeline/sample_pipeline_setting3.json
+
+
+
+
+
 ---
