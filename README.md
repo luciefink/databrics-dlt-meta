@@ -103,7 +103,7 @@ _Notes:_
 
 **C/ Add metadata to Bronze table**
 
-- to dispaly metadata for object in bronze tables add specification in onboarding json.
+- to dispaly metadata in bronze tables add specifications in onboarding json.
 - see example in https://github.com/luciefink/databrics-dlt-meta/blob/main/config/onboarding4.json
 
 
