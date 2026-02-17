@@ -1,0 +1,134 @@
+[
+   {
+      "data_flow_id": "01",
+      "data_flow_group": "B1",
+      "source_system": "manual",
+      "source_format": "cloudFiles",
+      "source_details": {
+         "source_path_prod": "/Volumes/lucie_finkova/dlt_meta_lukas/dlt_meta_data/customers",
+         "source_schema_path": "/Volumes/lucie_finkova/dlt_meta_lukas/dlt_meta_ddl/customers.ddl"
+      },
+      "bronze_catalog_prod": "lucie_finkova",
+      "bronze_database_prod": "dlt_meta_lukas",
+      "bronze_table": "customers_bronze3",
+      "bronze_table_comment": "customers bronze table3",
+      "bronze_table_path_prod": "/Volumes/lucie_finkova/dlt_meta_lukas/dlt_meta_bronze/customers3",
+      "bronze_reader_options": {
+         "cloudFiles.format": "csv",
+         "cloudFiles.rescuedDataColumn": "_rescued_data",
+         "header": "true"
+      },
+      "bronze_cluster_by":["country"],
+      "bronze_data_quality_expectations_json_prod": "/Volumes/lucie_finkova/dlt_meta_lukas/dlt_meta_conf3/dqe3/customers3.json",
+      "bronze_catalog_quarantine_prod": "lucie_finkova",
+      "bronze_database_quarantine_prod": "dlt_meta_lukas",
+      "bronze_quarantine_table": "customers_quarantine3",
+      "bronze_quarantine_table_comment": "customers quarantine table3",
+      "bronze_quarantine_table_path_prod": "/Volumes/lucie_finkova/dlt_meta_lukas/dlt_meta_bronze/customers_quarantine3",
+      "bronze_quarantine_table_cluster_by": ["country"],
+      "silver_catalog_prod": "lucie_finkova",
+      "silver_database_prod": "dlt_meta_lukas",
+      "silver_table": "customers_silver3",
+      "silver_table_comment": "customers silver table3",
+      "silver_table_path_prod": "/Volumes/lucie_finkova/dlt_meta_lukas/dlt_meta_silver/customers3",
+      "silver_cdc_apply_changes": {
+         "keys": [
+            "customer_id"
+         ],
+         "sequence_by": "updated_timestamp",
+         "scd_type": "2",
+         "apply_as_deletes": "state = 'D'",
+         "except_column_list": [
+            "state",
+            "updated_timestamp",
+            "_rescued_data"
+         ]
+      },
+      "silver_cluster_by":["country"],
+      "silver_transformation_json_prod": "/Volumes/lucie_finkova/dlt_meta_lukas/dlt_meta_conf3/silver_transformations3.json",
+      "silver_data_quality_expectations_json_prod": "/Volumes/lucie_finkova/dlt_meta_lukas/dlt_meta_conf3/dqe3/customers_silver_dqe3.json"
+
+   },
+   {
+      "data_flow_id": "02",
+      "data_flow_group": "B1",
+      "source_system": "manual",
+      "source_format": "cloudFiles",
+      "source_details": {
+         "source_path_prod": "/Volumes/lucie_finkova/dlt_meta_lukas/dlt_meta_data/orders",
+         "source_schema_path": "/Volumes/lucie_finkova/dlt_meta_lukas/dlt_meta_ddl/orders.ddl"
+      },
+      "bronze_catalog_prod": "lucie_finkova",
+      "bronze_database_prod": "dlt_meta_lukas",
+      "bronze_table": "orders_bronze3",
+      "bronze_table_comment": "orders bronze table3",
+      "bronze_table_path_prod": "/Volumes/lucie_finkova/dlt_meta_lukas/dlt_meta_bronze/orders3",
+      "bronze_reader_options": {
+         "cloudFiles.format": "json",
+         "cloudFiles.rescuedDataColumn": "_rescued_data"
+      },
+      "bronze_cluster_by":["payment_method"],
+      "bronze_data_quality_expectations_json_prod": "/Volumes/lucie_finkova/dlt_meta_lukas/dlt_meta_conf3/dqe3/orders3.json",
+      "bronze_database_quarantine_prod": "lucie_finkova.dlt_meta_lukas",
+      "bronze_quarantine_table": "orders_quarantine3",
+      "bronze_quarantine_table_comment": "orders bronze quarantine table3",
+      "bronze_quarantine_table_path_prod": "/Volumes/lucie_finkova/dlt_meta_lukas/dlt_meta_bronze/orders_quarantine3",
+      "bronze_quarantine_table_cluster_by": ["payment_method"],
+      "silver_catalog_prod": "lucie_finkova",
+      "silver_database_prod": "dlt_meta_lukas",
+      "silver_table": "orders_silver3",
+      "silver_table_comment": "orders silver table3",
+      "silver_table_path_prod": "/Volumes/lucie_finkova/dlt_meta_lukas/dlt_meta_silver/orders3",
+      "silver_cluster_by":["payment_method"],
+      "silver_transformation_json_prod": "/Volumes/lucie_finkova/dlt_meta_lukas/dlt_meta_conf3/silver_transformations3.json",
+      "silver_data_quality_expectations_json_prod": "/Volumes/lucie_finkova/dlt_meta_lukas/dlt_meta_conf3/dqe3/orders_silver_dqe3.json"
+   },
+   {
+      "data_flow_id": "03",
+      "data_flow_group": "B1",
+      "source_system": "manual",
+      "source_format": "cloudFiles",
+      "source_details": {
+         "source_path_prod": "/Volumes/lucie_finkova/dlt_meta_lukas/dlt_meta_data/products",
+         "source_schema_path": "/Volumes/lucie_finkova/dlt_meta_lukas/dlt_meta_ddl/products.ddl"
+      },
+      "bronze_catalog_prod": "lucie_finkova",
+      "bronze_database_prod": "dlt_meta_lukas",
+      "bronze_table": "products_bronze3",
+      "bronze_table_comment": "products bronze table3",
+      "bronze_table_path_prod": "/Volumes/lucie_finkova/dlt_meta_lukas/dlt_meta_bronze/products3",
+      "bronze_reader_options": {
+         "cloudFiles.format": "csv",
+         "cloudFiles.rescuedDataColumn": "_rescued_data",
+         "header": "true"
+      },
+      "bronze_cluster_by":["product_id"],
+      "bronze_data_quality_expectations_json_prod": "/Volumes/lucie_finkova/dlt_meta_lukas/dlt_meta_conf3/dqe3/products3.json",
+      "bronze_database_quarantine_prod": "lucie_finkova.dlt_meta_lukas",
+      "bronze_quarantine_table": "products_quarantine3",
+      "bronze_quarantine_table_comment": "products quarantine bronze table3",
+      "bronze_quarantine_table_path_prod": "/Volumes/lucie_finkova/dlt_meta_lukas/dlt_meta_bronze/products_quarantine3",
+      "bronze_quarantine_table_cluster_by": ["product_id"],
+      "silver_catalog_prod": "lucie_finkova",
+      "silver_database_prod": "dlt_meta_lukas",
+      "silver_table": "products_silver3",
+      "silver_table_comment": "products silver table3",
+      "silver_table_path_prod": "/Volumes/lucie_finkova/dlt_meta_lukas/dlt_meta_silver/products3",
+      "silver_cdc_apply_changes": {
+         "keys": [
+            "product_id"
+         ],
+         "sequence_by": "created_timestamp",
+         "scd_type": "2",
+         "apply_as_deletes": "state = 'D'",
+         "except_column_list": [
+            "state",
+            "created_timestamp",
+            "_rescued_data"
+         ]
+      },
+      "silver_cluster_by":["product_id"],
+      "silver_transformation_json_prod": "/Volumes/lucie_finkova/dlt_meta_lukas/dlt_meta_conf3/silver_transformations3.json",
+      "silver_data_quality_expectations_json_prod": "/Volumes/lucie_finkova/dlt_meta_lukas/dlt_meta_conf3/dqe3/products_silver_dqe3.json"
+   }
+]
