@@ -1,0 +1,6 @@
+{
+    "expect_or_drop": {
+        "valid_order_id": "order_id IS NOT NULL",
+        "valid_customer_id": "customer_id IS NOT NULL"
+    }
+}
