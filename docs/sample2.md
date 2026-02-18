@@ -1,6 +1,6 @@
 ## Pipeline run description:
 - _for customers - without SCD_
-- _both input files from beginning_
+- _both input files from first run_
 - _where clause for silver customers_
 
 _Input files:_
