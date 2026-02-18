@@ -34,11 +34,11 @@ _Input files:_
 
 **Silver tables**
 
-	customers_bronze - 1000
+	customers_silver - 1000
 
-	orders_bronze - 1949 
+	orders_silver - 1949 
 
-	products_bronze - 500
+	products_silver - 500
 
 ************************************************************************************************
 ## Updates on inputs
@@ -61,10 +61,10 @@ _Input files:_
 
 **Silver tables**
 
-	customers_bronze - 1003
+	customers_silver - 1003
 
-	orders_bronze - 1957
+	orders_silver - 1957
 
-	products_bronze - > 503
+	products_silver - > 503
 
 
