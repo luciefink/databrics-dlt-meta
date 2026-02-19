@@ -53,7 +53,7 @@ This file defines the SELECT statements for target silver tables.
 **DQE Folder**  
 Contains data quality definitions for both bronze and silver data sets (customers, products, orders).
 
-**Important:** When the pipeline runs, the `expect_or_quarantine` condition is applied first (if configured), followed by `expect_or_drop/expect/expect_or_fail`. Always define `expect_or_drop/expect/expect_or_fail`, or the flow will not be created!
+**Important:** When the pipeline runs, the `expect_or_quarantine` condition is in parallel to `expect_or_drop/expect/expect_or_fail`. Always define `expect_or_drop/expect/expect_or_fail`, or the flow will not be created!
 
 Load all config files from the repository (https://github.com/luciefink/databrics-dlt-meta/tree/main/config) with the same folder structure to `/Volumes/lucie_finkova/dlt_meta_lukas/dlt_meta_conf`.
 
