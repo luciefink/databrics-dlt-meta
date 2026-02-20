@@ -114,6 +114,8 @@ _Notes:_
 
 **Variant5/ Complete pipeline bronze_silver with a custom silver table**
 - enriched orders table with customers
+- invoke_dlt_pipeline() used with _silver_custom_transform_func_
+- opinion: not well suited for joins, better use with simple operations (eg. add columns)
 
 **Variant7/ Complete pipeline bronze_silver with a custom silver table created with classic declarative pipelines**
 
