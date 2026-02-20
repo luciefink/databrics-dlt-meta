@@ -1,0 +1,5 @@
+{
+    "expect_or_quarantine": {
+        "quarantine_rule": "_rescued_data IS NOT NULL OR order_id IS NULL OR customer_id IS NULL OR order_amount < 0 OR order_date IS NULL OR order_status NOT IN ('pending', 'processing', 'shipped', 'delivered', 'cancelled')"
+    }
+}
