@@ -1,0 +1,28 @@
+{
+    "data_flow_id": "104",
+    "data_flow_group": "A1",
+    "source_system": "manual",
+    "source_format": "cloudFiles",
+    "source_details": {
+        "source_path_prod": "/Volumes/lucie_finkova/dlt_meta_lukas/dlt_meta_data/orders",
+        "source_schema_path": "/Volumes/lucie_finkova/dlt_meta_lukas/dlt_meta_ddl/orders.ddl"
+        },
+    "bronze_catalog_prod": "lucie_finkova",
+    "bronze_database_prod": "dlt_meta_lukas",
+    "bronze_table": "orders_bronze_joined6",
+    "bronze_table_comment": "second orders table to be used for join with customers",
+    "bronze_table_path_prod": "/Volumes/lucie_finkova/dlt_meta_lukas/dlt_meta_bronze/orders",
+    "bronze_reader_options": {
+    "cloudFiles.format": "json",
+    "cloudFiles.rescuedDataColumn": "_rescued_data"
+        },
+    "bronze_data_quality_expectations_json_prod": "/Volumes/lucie_finkova/dlt_meta_lukas/dlt_meta_conf6/dqe6/orders_new6.json",
+    "bronze_quarantine_table": "",
+    "silver_catalog_prod": "lucie_finkova",
+    "silver_database_prod": "dlt_meta_lukas",
+    "silver_table": "customers_orders_silver6",
+    "silver_table_comment": "customers orders joined silver table6",
+    "silver_table_path_prod": "/Volumes/lucie_finkova/dlt_meta_lukas/dlt_meta_silver/customers_orders",
+    "silver_transformation_json_prod": "/Volumes/lucie_finkova/dlt_meta_lukas/dlt_meta_conf6/silver_transformations6.json"
+}
+
