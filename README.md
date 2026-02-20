@@ -90,23 +90,32 @@ Create a Databricks Job to orchestrate the bronze and silver pipelines in sequen
 
 _Notes:_
 
-**A/ 2nd silver/bronze pipeplines with slightly different config setting:**
+**Variant2/ silver/bronze pipeplines with slightly different config setting:**
 
 - https://github.com/luciefink/databrics-dlt-meta/blob/main/config/onboarding2.json
 - https://github.com/luciefink/databrics-dlt-meta/blob/main/config/silver_transformations2.json
 - https://github.com/luciefink/databrics-dlt-meta/tree/main/config/dqe2
 
-**B/ Bronze and Silver pipeline chaining**
+**Variant3/ Bronze and Silver pipeline chaining**
 
 - change in pipeline setting
 - https://github.com/luciefink/databrics-dlt-meta/blob/main/src/pipeline/sample_pipeline_setting3.json
 
-**C/ Add metadata to Bronze table**
+**Variant4/ Add metadata to Bronze table**
 
 - to dispaly metadata in bronze tables add specifications in onboarding json.
 - dev/prod versions in onboarding json (see also onboarding4.ipynb)
 - dqe - expect
 - see example in https://github.com/luciefink/databrics-dlt-meta/blob/main/config/onboarding4.json
+
+**Variant5/ Simple one object pipeline with only expect_or_quarantine defined**
+- proof that if we define only expect_or_quarantine no main bronze table is created
+- see dqe example - https://github.com/luciefink/databrics-dlt-meta/tree/main/config/dqe5
+
+**Variant5/ Complete pipeline bronze_silver with a custom silver table**
+- enriched orders table with customers
+
+**Variant7/ Complete pipeline bronze_silver with a custom silver table created with classic declarative pipelines**
 
 
 
