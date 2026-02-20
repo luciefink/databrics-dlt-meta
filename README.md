@@ -119,6 +119,7 @@ _Notes:_
 
 **Variant7/ Complete pipeline bronze_silver with a custom silver table created with classic declarative pipelines**
 - https://github.com/luciefink/databrics-dlt-meta/tree/main/src/classic_dlt
+- quarantine invalid records - based on https://docs.databricks.com/aws/en/ldp/expectation-patterns - split source - based on codition data goes to regular bronze table OR quarantine (different approach than in dlt-meta)
   
 
 
